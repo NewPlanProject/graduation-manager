@@ -1,6 +1,6 @@
-device-diagnosis:
+graduation-manager:
     image: URL
-    hostname: device-diagnosis
+    hostname: graduation-manager
     volumes:
     - /etc/localtime:/etc/localtime:ro
     ports:
