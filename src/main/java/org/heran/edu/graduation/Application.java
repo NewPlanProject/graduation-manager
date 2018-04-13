@@ -16,15 +16,15 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  *
  */
 
-@SpringBootApplication(scanBasePackages = {"org.citic.iiot.diagnosis",
-        "org.citic.iiot.app.core.mybaits",
-        "org.citic.iiot.app.core.session"})
+@SpringBootApplication(scanBasePackages = {"org.heran.edu.graduation",
+        "org.heran.edu.app.core.mybaits",
+        "org.heran.edu.app.core.session"})
 @EnableTransactionManagement
-@ServletComponentScan(basePackages={"org.citic.iiot.diagnosis"})
+@ServletComponentScan(basePackages={"org.heran.edu.graduation"})
 @EnableAsync
 @EnableDiscoveryClient
 @EnableRedisHttpSession
-@EnableFeignClients(basePackages = {"org.citic.iiot.diagnosis.feignclient"})
+@EnableFeignClients(basePackages = {"org.heran.edu.graduation.feignclient"})
 public class Application
 {
     public static void main(String[] args) {
